@@ -1,4 +1,4 @@
-# react-js-tutorial
+# Otus Education. Lessons 1, 2
 
 ## Lesson 1:
 Basic configuration for the project on the master branch. What configurations you can find:
