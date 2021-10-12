@@ -13,7 +13,7 @@ export const parser = (line: string): ParsedLineType | null => {
     const isValidOperatorPush =
       isNumber(prevItem) &&
       !isNumber(item) &&
-      mathOperators.hasOwnProperty(item);
+      Object.prototype.hasOwnProperty.call(mathOperators, item);
 
     if (isValidNumberPush) {
       result.push(Number(item));

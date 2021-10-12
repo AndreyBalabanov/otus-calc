@@ -7,7 +7,7 @@ const rl = createInterface({
   output: process.stdout,
 });
 
-const question = (): Promise<null> =>
+const question = (): Promise<void> =>
   new Promise((resolve) => {
     rl.question("> ", (answer: string) => {
       const result = runner(answer);
@@ -20,7 +20,8 @@ const question = (): Promise<null> =>
     });
   });
 
-async function app(): Promise<null> {
+async function app(): Promise<void> {
+  /* eslint-disable no-constant-condition */
   while (true) {
     await question();
   }
