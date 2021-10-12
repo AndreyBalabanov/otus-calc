@@ -12,8 +12,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run check",
-      "pre-push": "npm run check"
+      "pre-commit": "",
+      "pre-push": ""
     }
   },
   "repository": {
